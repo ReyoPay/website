@@ -54,7 +54,7 @@ export default function AboutPage() {
                 For decades, transferring funds between neighboring African countries—like Nigeria and West African Francophone states (Côte d&apos;Ivoire, Senegal, Benin)—meant enduring high remittance markups, arbitrary bank delays, and cumbersome currency conversions.
               </p>
               <p style={{ color: "var(--color-text-body)" }}>
-                Meanwhile, remote workers, freelancers, and growing businesses faced punitive bank wire fees just to receive their hard-earned global currencies. We founded **ReyoPay** to eliminate these artificial barriers through modern financial technology and cryptographic ledger guarantees.
+                Meanwhile, remote workers, freelancers, and individuals earning or sending money across borders faced punitive bank wire fees and delays just to receive their hard-earned global currencies. We founded **ReyoPay** to eliminate these artificial barriers through modern financial technology and cryptographic ledger guarantees.
               </p>
             </div>
 

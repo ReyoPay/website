@@ -7,11 +7,13 @@ import {
   Building2,
   ArrowLeftRight,
   ShieldCheck,
+  Smartphone,
+  Globe2,
+  Users,
   Briefcase,
 } from "lucide-react";
 import CurrencyWidget from "../components/CurrencyWidget";
 import FAQSection from "../components/FAQSection";
-import FeatureCard from "../components/FeatureCard";
 import TestimonialCard from "../components/TestimonialCard";
 import ReyoButton from "../components/ui/ReyoButton";
 import ReyoCard from "../components/ui/ReyoCard";
@@ -73,7 +75,7 @@ export default function Home() {
                 margin: "0 auto 2.5rem auto",
               }}
             >
-              The modern financial platform built for Africa and the world. Hold NGN, XOF (CFA), USD, and EUR. Move money with zero P2P fees, instant virtual bank accounts, and bank-grade immutable ledgers.
+              The personal multi-currency financial platform built for Africa and the world. Hold NGN, XOF (CFA), USD, and EUR. Move money with zero P2P fees, instant virtual bank accounts, and bank-grade immutable ledgers.
             </p>
 
             {/* CTAs */}
@@ -96,7 +98,7 @@ export default function Home() {
                 Open Free Account
               </ReyoButton>
               <ReyoButton
-                href="/features"
+                href="#features"
                 variant="secondary"
                 size="lg"
               >
@@ -195,11 +197,11 @@ export default function Home() {
       </section>
 
       {/* 3. CORE FEATURES SECTION (Faint Flowing Waves Background + Modern Bento Layout) */}
-      <section className="section" style={{ position: "relative", overflow: "hidden" }}>
+      <section id="features" className="section" style={{ position: "relative", overflow: "hidden" }}>
         <SectionStrokeBackground variant="waves" opacity={0.25} />
         <div className="container" style={{ position: "relative", zIndex: 1 }}>
           <div style={{ textAlign: "center", maxWidth: "700px", margin: "0 auto 4rem auto" }}>
-            <span className="section-label">Platform Superpowers</span>
+            <span className="section-label">Platform Capabilities</span>
             <h2
               style={{
                 fontSize: "clamp(2rem, 3.8vw, 2.8rem)",
@@ -207,10 +209,10 @@ export default function Home() {
                 marginBottom: "1rem",
               }}
             >
-              Engineered for seamless everyday payments & global commerce
+              Powerful tools for borderless financial freedom
             </h2>
             <p style={{ fontSize: "1.1rem" }}>
-              Whether you are paying friends across town or managing multi-currency cashflows across borders, ReyoPay delivers speed, safety, and fairness.
+              Hold, convert, send, and manage funds globally with uncompromising speed, zero hidden fees, and mathematical ledger security.
             </p>
           </div>
 
@@ -219,8 +221,120 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. LIVE FX CALCULATOR & COMPARISON SECTION (Faint Connecting Ribbon Background) */}
+      {/* 4. WHO IT'S FOR / EVERYDAY LIFE & WORK (Merged from Personal Page) */}
       <section
+        id="use-cases"
+        className="section"
+        style={{
+          backgroundColor: "#F9FAFB",
+          borderTop: "1px solid var(--color-stroke-subtle)",
+          position: "relative",
+          overflow: "hidden",
+        }}
+      >
+        <SectionStrokeBackground variant="orbit" opacity={0.22} />
+        <div className="container" style={{ position: "relative", zIndex: 1 }}>
+          <div style={{ textAlign: "center", maxWidth: "700px", margin: "0 auto 3.5rem auto" }}>
+            <span className="section-label">Designed for Everyday Life</span>
+            <h2
+              style={{
+                fontSize: "clamp(2rem, 3.8vw, 2.8rem)",
+                marginTop: "0.5rem",
+                marginBottom: "1rem",
+              }}
+            >
+              Your money without borders, limits, or hidden fees
+            </h2>
+            <p style={{ fontSize: "1.1rem" }}>
+              Whether you earn in USD, support family in West Africa, or split dinner bills with friends, ReyoPay is the everyday wallet built for you.
+            </p>
+          </div>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+              gap: "2rem",
+            }}
+          >
+            {/* Card 1: Remote Workers & Freelancers */}
+            <ReyoCard padding="lg">
+              <div style={{ marginBottom: "0.5rem" }}>
+                <span className="section-label">Remote Workers & Freelancers</span>
+              </div>
+              <h3 style={{ fontSize: "1.45rem", fontWeight: 800, marginBottom: "0.75rem" }}>
+                Receive international earnings without excessive bank cuts
+              </h3>
+              <p style={{ fontSize: "0.98rem", color: "var(--color-text-body)", lineHeight: 1.65, marginBottom: "1.5rem" }}>
+                Receive USD, EUR, or GBP payouts from global clients, platforms, and employers. Hold your balance safely or convert to local Naira or CFA whenever the exchange rate is favorable.
+              </p>
+              <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.65rem", fontSize: "0.92rem" }}>
+                <li style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                  <Check size={16} color="var(--color-primary-dark)" strokeWidth={2.5} /> Multi-currency holding wallets
+                </li>
+                <li style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                  <Check size={16} color="var(--color-primary-dark)" strokeWidth={2.5} /> Real-time transparent FX conversion
+                </li>
+                <li style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                  <Check size={16} color="var(--color-primary-dark)" strokeWidth={2.5} /> Direct withdrawal to local commercial banks
+                </li>
+              </ul>
+            </ReyoCard>
+
+            {/* Card 2: Cross-Border Families */}
+            <ReyoCard padding="lg">
+              <div style={{ marginBottom: "0.5rem" }}>
+                <span className="section-label">Cross-Border Families</span>
+              </div>
+              <h3 style={{ fontSize: "1.45rem", fontWeight: 800, marginBottom: "0.75rem" }}>
+                Support loved ones across Africa instantly
+              </h3>
+              <p style={{ fontSize: "0.98rem", color: "var(--color-text-body)", lineHeight: 1.65, marginBottom: "1.5rem" }}>
+                Send money from Nigeria to Côte d&apos;Ivoire, Senegal, Benin, and beyond in seconds. Your family receives CFA directly into their wallet without queuing at remittance kiosks.
+              </p>
+              <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.65rem", fontSize: "0.92rem" }}>
+                <li style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                  <Check size={16} color="var(--color-primary-dark)" strokeWidth={2.5} /> Instant settlement in seconds (&lt; 3s)
+                </li>
+                <li style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                  <Check size={16} color="var(--color-primary-dark)" strokeWidth={2.5} /> Transparent rates with zero surprise deductions
+                </li>
+                <li style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                  <Check size={16} color="var(--color-primary-dark)" strokeWidth={2.5} /> Instant digital receipt on every transfer
+                </li>
+              </ul>
+            </ReyoCard>
+
+            {/* Card 3: Everyday P2P & Bills */}
+            <ReyoCard padding="lg">
+              <div style={{ marginBottom: "0.5rem" }}>
+                <span className="section-label">Everyday P2P & Bills</span>
+              </div>
+              <h3 style={{ fontSize: "1.45rem", fontWeight: 800, marginBottom: "0.75rem" }}>
+                Instant zero-fee peer-to-peer transfers
+              </h3>
+              <p style={{ fontSize: "0.98rem", color: "var(--color-text-body)", lineHeight: 1.65, marginBottom: "1.5rem" }}>
+                Pay rent, split group tabs, or send pocket money to friends using just their @username. No account numbers to memorize, zero network downtime, and always 100% free.
+              </p>
+              <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.65rem", fontSize: "0.92rem" }}>
+                <li style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                  <Check size={16} color="var(--color-primary-dark)" strokeWidth={2.5} /> 0% transaction fee for all P2P sends
+                </li>
+                <li style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                  <Check size={16} color="var(--color-primary-dark)" strokeWidth={2.5} /> Username lookup and recent contact history
+                </li>
+                <li style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                  <Check size={16} color="var(--color-primary-dark)" strokeWidth={2.5} /> Biometric & PIN authorization security
+                </li>
+              </ul>
+            </ReyoCard>
+          </div>
+        </div>
+      </section>
+
+      {/* 5. LIVE FX CALCULATOR & COMPARISON SECTION (Faint Connecting Ribbon Background) */}
+      <section
+        id="calculator"
         className="section"
         style={{
           backgroundColor: "var(--color-bg-subtle)",
@@ -317,8 +431,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. HOW IT WORKS (Faint Orbital Stroke Background) */}
-      <section className="section" style={{ position: "relative", overflow: "hidden" }}>
+      {/* 6. HOW IT WORKS (Faint Orbital Stroke Background) */}
+      <section id="how-it-works" className="section" style={{ position: "relative", overflow: "hidden" }}>
         <SectionStrokeBackground variant="orbit" opacity={0.24} />
         <div className="container" style={{ position: "relative", zIndex: 1 }}>
           <div style={{ textAlign: "center", maxWidth: "650px", margin: "0 auto 4rem auto" }}>
@@ -389,8 +503,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. TESTIMONIALS & SOCIAL PROOF (Faint Topography Stroke Background) */}
+      {/* 7. TESTIMONIALS & SOCIAL PROOF (Faint Topography Stroke Background) */}
       <section
+        id="stories"
         className="section"
         style={{
           backgroundColor: "#F9FAFB",
@@ -410,7 +525,7 @@ export default function Home() {
                 marginBottom: "1rem",
               }}
             >
-              Trusted by thousands of individuals and cross-border businesses
+              Trusted by thousands of individuals across borders
             </h2>
           </div>
 
@@ -422,9 +537,9 @@ export default function Home() {
             }}
           >
             <TestimonialCard
-              quote="Moving funds between my Lagos accounts and my suppliers in Abidjan (Côte d'Ivoire) used to take 3 days and cost a fortune. With ReyoPay, it settles in seconds with zero hassle."
+              quote="Sending funds from Lagos to my family in Abidjan (Côte d'Ivoire) used to take 3 days and cost a fortune in remittance fees. With ReyoPay, it settles in seconds with zero hassle."
               author="Amara Nwachukwu"
-              role="Import/Export Merchant"
+              role="Freelance Designer"
               country="Nigeria / Côte d'Ivoire"
               avatar="AN"
             />
@@ -446,8 +561,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 7. FAQ ACCORDION SECTION (Faint Waves Overflow Stroke Background) */}
-      <section className="section" style={{ position: "relative", overflow: "hidden" }}>
+      {/* 8. FAQ ACCORDION SECTION (Faint Waves Overflow Stroke Background) */}
+      <section id="faq" className="section" style={{ position: "relative", overflow: "hidden" }}>
         <SectionStrokeBackground variant="waves" opacity={0.22} />
         <div className="container" style={{ position: "relative", zIndex: 1 }}>
           <div style={{ textAlign: "center", maxWidth: "650px", margin: "0 auto 3rem auto" }}>
@@ -467,7 +582,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 8. FINAL HIGH-CONVERSION CTA (Subtle Neon Mint Strokes on Dark) */}
+      {/* 9. FINAL HIGH-CONVERSION CTA (Subtle Neon Mint Strokes on Dark) */}
       <section
         style={{
           padding: "6rem 0",
@@ -506,7 +621,7 @@ export default function Home() {
               margin: "0 auto 1.5rem auto",
             }}
           >
-            Ready for fast, fair, and borderless finance?
+            Ready for fast, fair, and borderless personal finance?
           </h2>
           <p
             style={{
@@ -539,7 +654,7 @@ export default function Home() {
               variant="white"
               size="lg"
             >
-              Contact Sales
+              Contact Support
             </ReyoButton>
           </div>
         </div>

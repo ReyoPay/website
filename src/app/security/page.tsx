@@ -37,7 +37,7 @@ export default function SecurityPage() {
             Bank-grade security and cryptographic ledger integrity
           </h1>
           <p style={{ fontSize: "1.15rem", color: "var(--color-text-body)" }}>
-            Your money and data are shielded by enterprise-grade encryption, immutable transaction ledgers, and multi-factor authorization.
+            Your money and personal data are shielded by bank-grade AES 256-bit encryption, immutable transaction ledgers, and multi-factor authorization.
           </p>
         </div>
       </section>

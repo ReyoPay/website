@@ -23,10 +23,10 @@ export default function ContactPage() {
   };
 
   const subjectOptions = [
-    { value: "General Support", label: "General Support & Wallet Question" },
-    { value: "Dedicated Virtual Account", label: "Dedicated Virtual Account (DVA) Inquiry" },
-    { value: "Business API", label: "Business & Developer API" },
-    { value: "Partnership", label: "Partnership & Media" },
+    { value: "General Support", label: "General Support & Account" },
+    { value: "Dedicated Virtual Account", label: "Dedicated Virtual Account (DVA) & Deposits" },
+    { value: "Transfers & FX", label: "P2P Transfers & Currency Swaps" },
+    { value: "Security & PIN", label: "Security & Account Verification" },
   ];
 
   return (
@@ -41,7 +41,7 @@ export default function ContactPage() {
           overflow: "hidden",
         }}
       >
-        <SectionStrokeBackground variant="waves" opacity={0.28} />
+        <SectionStrokeBackground variant="waves" opacity={0.25} />
         <div className="container" style={{ maxWidth: "800px", position: "relative", zIndex: 1 }}>
           <span className="section-label">We&apos;re Here to Help</span>
           <h1
@@ -55,7 +55,7 @@ export default function ContactPage() {
             Get in touch with the ReyoPay team
           </h1>
           <p style={{ fontSize: "1.15rem", color: "var(--color-text-body)" }}>
-            Have a question, need technical support, or exploring enterprise partnership? Our team is available 24/7.
+            Have a question about your wallet, need assistance with a transfer, or want to share feedback? We are available 24/7.
           </p>
         </div>
       </section>
@@ -79,7 +79,7 @@ export default function ContactPage() {
                 Reach us anytime
               </h2>
               <p style={{ color: "var(--color-text-body)", fontSize: "1.05rem", lineHeight: 1.7, marginBottom: "2rem" }}>
-                Whether you are an individual user with an inquiry or a developer building custom integrations, we are eager to assist you.
+                Our customer support team is always on standby to ensure your multi-currency transfers and account management remain seamless.
               </p>
 
               <div style={{ display: "flex", flexDirection: "column", gap: "1.75rem" }}>
@@ -102,10 +102,7 @@ export default function ContactPage() {
                   <div>
                     <h4 style={{ fontSize: "1.05rem", fontWeight: 700 }}>Email Support</h4>
                     <p style={{ color: "var(--color-text-muted)", fontSize: "0.92rem", margin: "0.2rem 0" }}>
-                      General: support@reyopay.com
-                    </p>
-                    <p style={{ color: "var(--color-text-muted)", fontSize: "0.92rem" }}>
-                      Business & Sales: partners@reyopay.com
+                      support@reyopay.com
                     </p>
                   </div>
                 </div>
@@ -129,7 +126,7 @@ export default function ContactPage() {
                   <div>
                     <h4 style={{ fontSize: "1.05rem", fontWeight: 700 }}>Live Chat & In-App</h4>
                     <p style={{ color: "var(--color-text-muted)", fontSize: "0.92rem" }}>
-                      Available directly in your ReyoPay mobile and web dashboard 24/7.
+                      Available directly in your ReyoPay mobile and web app dashboard 24/7.
                     </p>
                   </div>
                 </div>

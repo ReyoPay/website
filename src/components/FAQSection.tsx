@@ -14,7 +14,7 @@ const FAQS: FAQItem[] = [
     category: "General",
     question: "What is ReyoPay and how does it work?",
     answer:
-      "ReyoPay is a multi-currency digital wallet and cross-border financial platform. It allows individuals and businesses to hold balances in multiple currencies (NGN, XOF, USD, EUR, GBP), send zero-fee instant P2P payments with just a username, convert currencies with transparent interbank rates, and deposit/withdraw funds via dedicated virtual bank accounts.",
+      "ReyoPay is a personal multi-currency digital wallet and cross-border money platform. It allows individuals, freelancers, remote workers, and families to hold balances in multiple currencies (NGN, XOF, USD, EUR, GBP), send zero-fee instant P2P payments with just a username, convert currencies with transparent interbank rates, and deposit/withdraw funds via dedicated virtual bank accounts.",
   },
   {
     category: "General",

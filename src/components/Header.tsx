@@ -26,9 +26,8 @@ export default function Header() {
   }, [pathname]);
 
   const navLinks = [
-    { label: "Features", href: "/features" },
-    { label: "Personal", href: "/personal" },
-    { label: "Business", href: "/business" },
+    { label: "Features", href: "/#features" },
+    { label: "How It Works", href: "/#how-it-works" },
     { label: "Security", href: "/security" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },

@@ -6,12 +6,13 @@ import {
   Zap,
   Building2,
   ShieldCheck,
-  Code2,
   ArrowRight,
   Check,
   CheckCircle2,
   Copy,
   ArrowLeftRight,
+  TrendingUp,
+  RefreshCw,
 } from "lucide-react";
 import ReyoCard from "./ui/ReyoCard";
 import ReyoButton from "./ui/ReyoButton";
@@ -34,6 +35,7 @@ export default function ModernFeaturesShowcase() {
 
   return (
     <div
+      id="features"
       style={{
         display: "grid",
         gridTemplateColumns: "repeat(12, 1fr)",
@@ -43,6 +45,7 @@ export default function ModernFeaturesShowcase() {
     >
       {/* 1. LARGE HERO BENTO TILE: Multi-Currency Dynamic Wallet Engine (Spans 7 columns) */}
       <div
+        id="wallets"
         style={{
           gridColumn: "span 7",
           backgroundColor: "#FFFFFF",
@@ -104,7 +107,7 @@ export default function ModernFeaturesShowcase() {
           </div>
 
           <h3 style={{ fontSize: "1.65rem", fontWeight: 900, marginBottom: "0.6rem" }}>
-            One Account. Global Multi-Currency Liquidity.
+            One Account. Unlimited Multi-Currency Wallets.
           </h3>
           <p style={{ fontSize: "1.02rem", color: "var(--color-text-body)", lineHeight: 1.6, maxWidth: "520px" }}>
             Hold segregated balances in <strong>NGN</strong>, <strong>XOF (CFA)</strong>, <strong>USD</strong>, and <strong>EUR</strong>. Swap instantly with guaranteed real-time interbank rates and zero hidden spread markups.
@@ -182,6 +185,7 @@ export default function ModernFeaturesShowcase() {
 
       {/* 2. BENTO TILE: Instant Zero-Fee @Username P2P (Spans 5 columns) */}
       <div
+        id="p2p"
         style={{
           gridColumn: "span 5",
           backgroundColor: "#FFFFFF",
@@ -293,6 +297,7 @@ export default function ModernFeaturesShowcase() {
 
       {/* 3. BENTO TILE: Dedicated Virtual Bank Accounts (Spans 4 columns) */}
       <div
+        id="dva"
         style={{
           gridColumn: "span 4",
           backgroundColor: "#FFFFFF",
@@ -330,15 +335,15 @@ export default function ModernFeaturesShowcase() {
                 letterSpacing: "0.06em",
               }}
             >
-              Direct Bank
+              Direct Bank Inbound
             </span>
           </div>
 
           <h3 style={{ fontSize: "1.35rem", fontWeight: 900, marginBottom: "0.6rem" }}>
-            Dedicated Virtual Accounts
+            Dedicated Virtual Account
           </h3>
           <p style={{ fontSize: "0.95rem", color: "var(--color-text-body)", lineHeight: 1.6 }}>
-            Receive local bank transfers directly into your wallet with an automated, personal account number.
+            Receive local bank transfers directly into your personal wallet with your own dedicated account number.
           </p>
         </div>
 
@@ -391,6 +396,7 @@ export default function ModernFeaturesShowcase() {
 
       {/* 4. BENTO TILE: Bank-Grade Immutable Ledger (Spans 4 columns) */}
       <div
+        id="security"
         style={{
           gridColumn: "span 4",
           backgroundColor: "#FFFFFF",
@@ -467,8 +473,9 @@ export default function ModernFeaturesShowcase() {
         </div>
       </div>
 
-      {/* 5. BENTO TILE: Developer APIs & Merchant Hub (Spans 4 columns) */}
+      {/* 5. BENTO TILE: Real-Time FX & Transparent Swaps (Spans 4 columns) */}
       <div
+        id="fx"
         style={{
           gridColumn: "span 4",
           backgroundColor: "#FFFFFF",
@@ -495,7 +502,7 @@ export default function ModernFeaturesShowcase() {
                 justifyContent: "center",
               }}
             >
-              <Code2 size={22} strokeWidth={2.2} />
+              <RefreshCw size={22} strokeWidth={2.2} />
             </div>
             <span
               style={{
@@ -506,19 +513,19 @@ export default function ModernFeaturesShowcase() {
                 letterSpacing: "0.06em",
               }}
             >
-              API & Webhooks
+              Transparent Rates
             </span>
           </div>
 
           <h3 style={{ fontSize: "1.35rem", fontWeight: 900, marginBottom: "0.6rem" }}>
-            Developer & Business Hub
+            Real-Time Currency Swaps
           </h3>
           <p style={{ fontSize: "0.95rem", color: "var(--color-text-body)", lineHeight: 1.6 }}>
-            Programmatically generate wallets, automate payroll batches, and listen to signed webhooks.
+            Convert seamlessly between currencies with live interbank exchange rates and zero surprise bank deductions.
           </p>
         </div>
 
-        {/* API Response Mockup */}
+        {/* Live Swap Mini Card */}
         <div
           style={{
             marginTop: "1.5rem",
@@ -526,19 +533,22 @@ export default function ModernFeaturesShowcase() {
             border: "1px solid var(--color-stroke)",
             borderRadius: "var(--radius-lg)",
             padding: "0.9rem 1rem",
-            fontFamily: "monospace",
-            fontSize: "0.76rem",
-            color: "var(--color-text-main)",
+            fontSize: "0.82rem",
             display: "flex",
             flexDirection: "column",
-            gap: "0.25rem",
+            gap: "0.4rem",
           }}
         >
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <span style={{ color: "var(--color-primary-dark)", fontWeight: 800 }}>POST /api/v1/transfers</span>
-            <span style={{ color: "var(--color-success)", fontWeight: 700 }}>200 OK</span>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <span style={{ color: "var(--color-text-muted)", fontWeight: 600 }}>Market Rate</span>
+            <span style={{ fontWeight: 800, color: "var(--color-text-main)" }}>1 NGN = 0.408 CFA</span>
           </div>
-          <div style={{ color: "var(--color-text-muted)" }}>{`{ "status": "settled", "fee": 0 }`}</div>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderTop: "1px dashed var(--color-stroke)", paddingTop: "0.4rem" }}>
+            <span style={{ color: "var(--color-success)", fontWeight: 700, display: "flex", alignItems: "center", gap: "0.25rem" }}>
+              <TrendingUp size={13} /> Zero Hidden Spread
+            </span>
+            <span style={{ color: "var(--color-primary-dark)", fontWeight: 800 }}>Guaranteed</span>
+          </div>
         </div>
       </div>
     </div>

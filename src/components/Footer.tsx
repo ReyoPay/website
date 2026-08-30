@@ -34,7 +34,7 @@ export default function Footer() {
                 color: "#A1A1AA",
               }}
             >
-              Fast, fair, borderless money movement. Send, save, and grow your wealth across currencies with zero hidden fees.
+              Fast, fair, borderless personal finance. Hold multiple currencies, send money instantly with zero fees, and grow your wealth with bank-grade security.
             </p>
             <div
               style={{
@@ -113,7 +113,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Product Links */}
+          {/* Features / Capabilities Column */}
           <div>
             <h4
               style={{
@@ -123,33 +123,38 @@ export default function Footer() {
                 marginBottom: "1.25rem",
               }}
             >
-              Product
+              Personal Wallet
             </h4>
             <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
               <li>
-                <Link href="/features" style={{ color: "#A1A1AA" }}>
-                  Multi-Currency Wallets
+                <Link href="/#features" style={{ color: "#A1A1AA" }}>
+                  Multi-Currency Holding
                 </Link>
               </li>
               <li>
-                <Link href="/features#p2p" style={{ color: "#A1A1AA" }}>
-                  Instant P2P Transfers
+                <Link href="/#features" style={{ color: "#A1A1AA" }}>
+                  Instant Zero-Fee P2P
                 </Link>
               </li>
               <li>
-                <Link href="/features#dva" style={{ color: "#A1A1AA" }}>
-                  Virtual Accounts (DVA)
+                <Link href="/#features" style={{ color: "#A1A1AA" }}>
+                  Virtual Bank Accounts (DVA)
                 </Link>
               </li>
               <li>
-                <Link href="/features#fx" style={{ color: "#A1A1AA" }}>
-                  Cross-Border Exchange
+                <Link href="/#calculator" style={{ color: "#A1A1AA" }}>
+                  Transparent FX Swaps
+                </Link>
+              </li>
+              <li>
+                <Link href="/#how-it-works" style={{ color: "#A1A1AA" }}>
+                  How It Works
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Solutions Links */}
+          {/* Who It's For Column */}
           <div>
             <h4
               style={{
@@ -159,32 +164,27 @@ export default function Footer() {
                 marginBottom: "1.25rem",
               }}
             >
-              Solutions
+              Everyday Life
             </h4>
             <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.8rem" }}>
               <li>
-                <Link href="/personal" style={{ color: "#A1A1AA" }}>
-                  For Individuals
+                <Link href="/#use-cases" style={{ color: "#A1A1AA" }}>
+                  Remote Workers & Freelancers
                 </Link>
               </li>
               <li>
-                <Link href="/personal#freelancers" style={{ color: "#A1A1AA" }}>
-                  Freelancers & Remote Workers
+                <Link href="/#use-cases" style={{ color: "#A1A1AA" }}>
+                  Cross-Border Families
                 </Link>
               </li>
               <li>
-                <Link href="/business" style={{ color: "#A1A1AA" }}>
-                  For Businesses & Merchants
-                </Link>
-              </li>
-              <li>
-                <Link href="/business#payroll" style={{ color: "#A1A1AA" }}>
-                  Global Payroll & Payouts
+                <Link href="/#use-cases" style={{ color: "#A1A1AA" }}>
+                  Everyday P2P & Bills
                 </Link>
               </li>
               <li>
                 <Link href="/security" style={{ color: "#A1A1AA" }}>
-                  Immutable Ledger Security
+                  Immutable Ledger Safety
                 </Link>
               </li>
             </ul>
@@ -215,7 +215,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/contact" style={{ color: "#A1A1AA" }}>
-                  Help & Contact
+                  Help & Support
                 </Link>
               </li>
               <li>
@@ -249,7 +249,7 @@ export default function Footer() {
               color: "#71717A",
             }}
           >
-            ReyoPay is a financial technology platform. Banking and dedicated virtual account services are provided in partnership with licensed partner financial institutions and payment service providers. All funds are held securely in segregated accounts with regulated partner banks.
+            ReyoPay is a personal financial technology platform. Dedicated virtual bank account and payment services are provided in partnership with licensed financial institutions and payment gateways. User funds are held in segregated accounts with regulated partner banks.
           </p>
 
           <div
